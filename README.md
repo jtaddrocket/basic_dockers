@@ -5,3 +5,10 @@
 - Portable artifact, easily share and move this package to any environment. 
 
 - Makes development and deployment more easy and efficient. 
+
+
+| Docker Image | Container |
+|-------|-------|
+| 1. Package or Artifact | 1. Docker Image -> Run  |
+| 2. Move or share this Artifact | 2. Start the Application |
+| | Create a container -> environment and running |
