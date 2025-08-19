@@ -1,5 +1,8 @@
 FROM python:3.10-alpine
-COPY . /app
-WORKDIR /app
+WORKDIR /code
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
+COPY . .
 RUN pip install -r requirements.txt
-CMD python app.py
+EXPOSE 5000
+CMD ["flask","run"]
